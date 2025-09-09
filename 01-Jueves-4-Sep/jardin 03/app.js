@@ -23,26 +23,34 @@ ctx.lineWidth = 4;
 
 // Ojo izquierdo (elipse)
 ctx.beginPath();
-ctx.ellipse(360, 290, 30, 18, Math.PI / 12, 0, 2 * Math.PI);
+ctx.ellipse(340, 290, 30, 18, Math.PI / 12, 0, 2 * Math.PI);
 ctx.fillStyle = "#ffffff";
 ctx.fill();
 
 
 ctx.beginPath();
-ctx.ellipse(360, 290, 15, 10, 0, 0, 2 * Math.PI);
+ctx.ellipse(340, 290, 15, 10, 0, 0, 2 * Math.PI);
 ctx.fillStyle = "#222";
 ctx.fill();
 
 // Ojo derecho (elipse, más pequeño y desplazado)
 ctx.beginPath();
-ctx.ellipse(449, 290, 30, 18, -Math.PI / 10, 0, 2 * Math.PI);
+ctx.ellipse(459, 290, 30, 18, -Math.PI / 10, 0, 2 * Math.PI);
 ctx.fillStyle = "#ffffff";
 ctx.fill();
 
 
 ctx.beginPath();
-ctx.ellipse(450, 290, 15, 10, 0, 0, 2 * Math.PI);
+ctx.ellipse(459, 290, 15, 10, 0, 0, 2 * Math.PI);
 ctx.fillStyle = "#222";
+ctx.fill();
+
+ctx.beginPath();
+ctx.moveTo(400, 300);
+ctx.lineTo(425, 385);
+ctx.lineTo(390, 385);
+ctx.closePath();
+ctx.fillStyle = "#ffffffff";
 ctx.fill();
 
 // Nariz (triángulo)
@@ -53,6 +61,7 @@ ctx.lineTo(390, 380);
 ctx.closePath();
 ctx.fillStyle = "#e0a96d";
 ctx.fill();
+
 
 
 // Oreja izquierda (elipse)
@@ -70,27 +79,49 @@ ctx.fill();
 
 // Ceja izquierda (línea)
 ctx.beginPath();
-ctx.moveTo(340, 245);
-ctx.lineTo(380, 255);
+ctx.moveTo(325, 255);
+ctx.lineTo(390, 265);
 ctx.strokeStyle = "#222";
-ctx.lineWidth = 5;
+ctx.lineWidth = 3;
 ctx.stroke();
 
 // Ceja derecha (línea)
 ctx.beginPath();
-ctx.moveTo(425, 240);
-ctx.lineTo(455, 250);
+ctx.moveTo(425, 270);
+ctx.lineTo(490, 250);
 ctx.strokeStyle = "#222";
-ctx.lineWidth = 4;
+ctx.lineWidth = 3;
 ctx.stroke();
 
-// Cabello (triángulo grande)
+// Cabello de mujer (forma básica con curvas y elipses)
+
+// Lado izquierdo del cabello
 ctx.beginPath();
-ctx.moveTo(320, 140);
-ctx.lineTo(480, 120);
-ctx.lineTo(400, 220);
+ctx.moveTo(270, 180);
+ctx.bezierCurveTo(180, 250, 220, 500, 370, 520);
+ctx.bezierCurveTo(320, 400, 260, 320, 320, 200);
 ctx.closePath();
-ctx.fillStyle = "#2e1a47";
+ctx.fillStyle = "#000000ff";
 ctx.fill();
+
+// Lado derecho del cabello
+ctx.beginPath();
+ctx.moveTo(530, 180);
+ctx.bezierCurveTo(620, 250, 580, 500, 430, 520);
+ctx.bezierCurveTo(480, 400, 540, 320, 480, 200);
+ctx.closePath();
+ctx.fillStyle = "#000000ff";
+ctx.fill();
+
+// Flequillo (frente)
+ctx.beginPath();
+ctx.moveTo(320, 150);
+ctx.bezierCurveTo(380, 50, 500, 120, 600, 260);
+ctx.bezierCurveTo(330, 250, 210, 190, 270, 180);
+ctx.closePath();
+ctx.fillStyle = "#000000ff";
+ctx.fill();
+
+
 
 
