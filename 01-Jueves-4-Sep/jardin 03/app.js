@@ -123,5 +123,17 @@ ctx.fillStyle = "#000000ff";
 ctx.fill();
 
 
+ctx.beginPath();
+ctx.ellipse(365, 390, 2.5, 2.5, 0, 0, 2 * Math.PI);
+ctx.fillStyle = "#222";
+ctx.fill();
+
+ctx.beginPath();
+ctx.ellipse(445, 390, 2.5, 2.5, 0, 0, 2 * Math.PI);
+ctx.fillStyle = "#222";
+ctx.fill();
+
+
+
 
 
