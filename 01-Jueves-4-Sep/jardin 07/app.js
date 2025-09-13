@@ -1,3 +1,6 @@
+console.log('jardin 07');
+console.log(THREE);
+
 const renderer = new THREE.WebGLRenderer({
   canvas: document.getElementById('lienzo')
 });
