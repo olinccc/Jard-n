@@ -15,11 +15,12 @@ const camera = new THREE.PerspectiveCamera(75, width / height, 0.1, 1000);
 
 // Material para la copa (esferas)
 const copaMaterial = new THREE.MeshPhongMaterial({
-   flatShading: true,
-   specular: "#ffffff", 
-   shininess: 100,
-   color: "green"  // Color inicial
+    flatShading: true,
+    specular: "#ffffff",
+    shininess: 100,
+    color: "green"  // ✅ asegúrate de que esto esté presente
 });
+
 
 const geometry = new THREE.SphereGeometry(0.5, 32, 32); 
 const spheres = [];
@@ -57,9 +58,16 @@ scene.add(frontLight);
 const boton = document.getElementById("cambiarColor");
 
 boton.addEventListener("click", () => {
-    // Cambiar el color del material
-    copaMaterial.color.set(Math.random() * 0xffffff);  // Color aleatorio
-    renderer.render(scene, camera); // Volver a renderizar la escena
+    console.log("Botón clickeado"); // (opcional para pruebas)
+
+    // Cambiar a un color específico para probar (ej: rojo)
+    copaMaterial.color.set("red");
+
+    // Forzar actualización del material
+    copaMaterial.needsUpdate = true;
+
+    // Volver a renderizar
+    renderer.render(scene, camera);
 });
 
 // Render y animación
