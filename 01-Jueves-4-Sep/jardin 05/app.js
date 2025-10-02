@@ -1,4 +1,4 @@
-console.log("Hola, mundo 3D!");
+console.log("Hola mundo!");
 
 // Escena
 const scene = new THREE.Scene();

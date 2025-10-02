@@ -1,3 +1,5 @@
+console.log("Hola mundo");
+
 const rect = document.getElementById("rectangulo");
 
 rect.addEventListener("click", (event) => {

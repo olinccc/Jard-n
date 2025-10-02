@@ -1,4 +1,4 @@
-console.log("Hola, mundo!");
+console.log("Hola mundo!");
 console.log(THREE);
 
 const canvas = document.getElementById("lienzo");

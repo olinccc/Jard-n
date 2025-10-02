@@ -1,3 +1,4 @@
+console.log("Hola mundo");
 gsap.registerPlugin(MotionPathPlugin);
 
 // escenario y pelota

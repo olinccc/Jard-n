@@ -1,4 +1,4 @@
-console.log('jardin 07');
+console.log('Hola mundo!');
 console.log(THREE);
 
 const renderer = new THREE.WebGLRenderer({
