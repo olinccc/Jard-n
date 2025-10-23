@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>14-22-octubre</title>
+
+  <!-- Carga las fuentes -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=BBH+Sans+Bogle:wght@400;700&family=Bitcount+Grid+Single:wght@100;400;700&family=Source+Code+Pro:wght@400;600&display=swap');
+  </style>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <canvas id = "lienzo"></canvas>
+  <nav class="nav">
+    <a href="#">(ABOUT)</a>
+    <a href="#">(CONTACT)</a>
+  </nav>
+
+  <main class="hero">
+    <h1 class="title">NING HUANG’25</h1>
+    <p class="subtitle">MIXING INTERACTIONS, CODE, & IMAGINATION</p>
+    <div class="design-folio">
+      <span class="design">DESIGN</span> - <span class="folio">FOLIO</span>
+    </div>
+  </main>
+
+  <footer class="footer">
+    I'M A DIGITAL DESIGNER BASED IN TAIPEI, TAIWAN<br />
+    FOCUSED ON WEB EXPERIENCE & MOTION DESIGN.
+  </footer>
+
+  <!-- cargar Three.js antes de app.js -->
+    <script src = "https://cdn.jsdelivr.net/npm/three@0.160.1/build/three.min.js"></script>
+
+  <!-- diagnóstico rápido -->
+  <script>
+    console.log('THREE disponible?', typeof THREE !== 'undefined');
+    console.log('canvas encontrado?', !!document.getElementById('lienzo'));
+  </script>
+
+  <script src="app.js"></script>
+</body>
+</html>
+
