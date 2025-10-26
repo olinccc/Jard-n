@@ -1,13 +1,17 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jardín 16</title>
-    <link rel="stylesheet" href="./style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Jardín 16 — Seis cuadrados</title>
+  <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    <!-- cargar el app.js correcto (está en la raíz de 'jardin 16') -->
-    <script src="./app.js"></script>
+  <canvas id="lienzo"></canvas>
+  <main class="wrap">
+    <h1 class="visually-hidden">Seis cuadrados</h1>
+    <div id="grid" class="grid" role="list" aria-label="Seis cuadrados"></div>
+  </main>
+  <script src="app.js"></script>
 </body>
 </html>
