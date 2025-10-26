@@ -58,6 +58,21 @@ function createSquares() {
     }
 
     document.body.appendChild(container);
-}
 
-createSquares();
+    // asegurar que no haya duplicados y no tocar estilos globales aquí
+    (function ensureSquares() {
+        if (document.querySelectorAll('.square').length >= 6) {
+            console.log('Ya existen .square:', document.querySelectorAll('.square').length);
+            return;
+        }
+
+        const frag = document.createDocumentFragment();
+        for (let i = 0; i < 6; i++) {
+            const d = document.createElement('div');
+            d.className = 'square';
+            frag.appendChild(d);
+        }
+        document.body.insertBefore(frag, document.body.firstChild);
+        console.log('Se crearon 6 .square dinámicamente');
+    })();
+}
