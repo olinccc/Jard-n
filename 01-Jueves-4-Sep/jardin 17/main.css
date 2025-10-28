@@ -39,6 +39,7 @@ body {
     align-items: flex-start;
     justify-content: center;
     padding-top: 40px;
+    font-family: "Kabel Ultra", "Arial Black", Arial, sans-serif;
 }
 
 .description-text {
@@ -47,19 +48,20 @@ body {
     left: 60px;
     width: 350px;
     color: #ffffff;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 400;
     line-height: 1.5;
     text-align: left;
     z-index: 10;
+    font-family: "Futura", "Futura PT", Futura, -apple-system, sans-serif;
 }
 
 .red-circle {
     position: absolute;
-    bottom: 60px;
-    right: 60px;
-    width: 96px;
-    height: 96px;
+    bottom: 80px;
+    right: 80px;
+    width: 150px;
+    height: 150px;
     background-color: #ff0000;
     border-radius: 50%;
     z-index: 10;
